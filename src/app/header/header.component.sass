@@ -9,16 +9,61 @@ header
       display: flex
       justify-content: space-between
 
+      .header
+        &_profile
+          position: relative
+
+        &_avatar-profile
+          cursor: pointer
+          transition: all .4s
+          &:hover
+            opacity: .5
+
+        &_menu-profile
+          opacity: 0
+          visibility: hidden
+          transition: all .4s
+          position: absolute
+          top: 35px
+
+          left: 0
+          margin: 0
+          width: 200px
+          background: #343434
+
+          padding: 10px
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+          li
+            list-style: none
+            font-size: 12px
+            a
+              text-decoration: none
+              transition: all .4s
+              display: inline-block
+              margin-bottom: 4px
+              &:hover
+                text-decoration: underline
+                color: #9A0680
+
+
+          &.active
+            visibility: visible
+            opacity: 1
+
+
       .header_nav-list
         margin: 0
         padding: 0
         display: flex
+
         li
           list-style: none
+
           a
             padding: 30px 15px
             transition: all .3s
             display: inline-block
+
             &:hover
               color: #9A0680
 
@@ -26,6 +71,7 @@ header
       .header_search-second
         cursor: pointer
         transition: all .4s
+
         &:hover
           opacity: .5
 

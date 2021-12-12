@@ -31,8 +31,24 @@
               <img src="assets/img/svg/search.svg" alt="search"/>
             </div>
           </div>
-          <div class="header_profile">
-
+          <div class="header_profile" (click)="handleClickOnSideMenuHeader($event)">
+            <div class="header_avatar-profile">
+              <img src="assets/img/svg/user-profile.svg" alt="Profile" />
+            </div>
+            <ul  class="header_menu-profile" [class.active]="activeClassHeaderProfileMenu" >
+              <li>
+                <a [routerLink]="['/home']" [class.selected]="path === 'home'">Home</a>
+              </li>
+              <li>
+                <a [routerLink]="['/collection']" [class.selected]="path === 'collection'">Collection</a>
+              </li>
+              <li>
+                <a [routerLink]="['/settings']" [class.selected]="path === 'settings'">Settings</a>
+              </li>
+              <li>
+                <a [routerLink]="['/logout']" [class.selected]="path === 'logout'">Logout</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
