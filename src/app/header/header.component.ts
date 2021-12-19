@@ -19,5 +19,4 @@ export class HeaderComponent implements OnInit {
     this.activeClassHeaderProfileMenu = !this.activeClassHeaderProfileMenu;//
   }
 
-
 }
