@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BodyComponent } from './body/body.component';
 import { HomeComponent } from './home/home.component';
+import { PlayerComponent } from './player/player.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     BodyComponent,
     HomeComponent,
+    PlayerComponent,
 
   ],
   imports: [

@@ -1,0 +1,38 @@
+#player
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 20
+  background: #333333
+  height: 60px
+  width: 100%
+
+  .player_progress-bar
+    top: 0
+    left: 0
+    right: 0
+    height: 15px
+    background: #565656
+    width: 100%
+
+  .player_controls__wrapper
+    display: flex
+    height: 45px
+    padding: 0 10px
+
+  .control-item
+    margin: 0 5px
+    width: 20px
+    height: 20px
+    cursor: pointer
+    transition: all .4s
+
+    &:hover
+      opacity: .5
+
+.icon-flipped
+  transform: scaleX(-1)
+  -moz-transform: scaleX(-1)
+  -webkit-transform: scaleX(-1)
+  -ms-transform: scaleX(-1)
