@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BodyComponent } from './body/body.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { PlayerComponent } from './player/player.component';
+import { CollectionComponent } from './pages/collection/collection.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PlayerComponent } from './player/player.component';
     BodyComponent,
     HomeComponent,
     PlayerComponent,
+    CollectionComponent,
 
   ],
   imports: [
